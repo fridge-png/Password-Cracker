@@ -51,10 +51,10 @@ def checkdictionary(threadname,filename):
 
 
 try:
-    p1 = multiprocessing.Process(target=checkdictionary,args=("THREAD-1","dic1.txt",))
-    p2 = multiprocessing.Process(target=checkdictionary,args=("THREAD-2","dic2.txt",))
-    p3 = multiprocessing.Process(target=checkdictionary,args=("THREAD-3","dic3.txt",))
-    p4 = multiprocessing.Process(target=checkdictionary,args=("THREAD-4","dic4.txt",))
+    p1 = multiprocessing.Process(target=checkdictionary,args=("THREAD-1","Dictionary/dic1.txt",))
+    p2 = multiprocessing.Process(target=checkdictionary,args=("THREAD-2","Dictionary/dic2.txt",))
+    p3 = multiprocessing.Process(target=checkdictionary,args=("THREAD-3","Dictionary/dic3.txt",))
+    p4 = multiprocessing.Process(target=checkdictionary,args=("THREAD-4","Dictionary/dic4.txt",))
     p1.start()
     p2.start()
     p3.start()
